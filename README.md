@@ -11,3 +11,7 @@ If you would like to help with this project, feel free to get in touch with me. 
 Yours truly,
 
 a very dissappointed user of any of the available public transit apps.
+
+## Preview
+
+![Desktop screenshot of the routing interface](concept/greeter/sreenshots/desktop.png) 

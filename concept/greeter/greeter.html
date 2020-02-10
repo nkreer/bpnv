@@ -9,40 +9,75 @@
 <body>
 
 <div class="container">
-    <h2>Plan your journey</h2>
-    <form>
-        <input type="text" placeholder="Start">
-        <input type="text" placeholder="Destination">
-        <select>
-            <option>Depart now</option>
-            <option>Depart in 15 minutes</option>
-            <option>Departed 5 minutes ago</option>
-            <option>Custom departure</option>
-        </select>
-        <button>Search</button>
-        <button>Best match</button>
-    </form>
+    <div class="grid">
+        <section>
+            <h1>Plan your journey</h1>
+            <form>
+                <input type="text" placeholder="Start">
+                <input type="text" placeholder="Destination">
+                <select>
+                    <option>Depart now</option>
+                    <option>Depart in 15 minutes</option>
+                    <option>Departed 5 minutes ago</option>
+                    <option>Custom departure</option>
+                </select>
+                <button>Search</button>
+                <button title="View only the first search result">Best match</button>
+            </form>
+        </section>
 
-    <hr>
+        <hr class="divider">
 
-    <h3>Connection details</h3>
-    <select>
-        <option>Use long-distance services</option>
-        <option>Use only regional services</option>
-    </select>
-    <select>
-        <option>Second class</option>
-        <option>First class</option>
-    </select>
-    <select>
-        <option>No BahnCard</option>
-        <option>BahnCard 25 Second</option>
-        <option>BahnCard 25 First</option>
-        <option>BahnCard 50 Second</option>
-        <option>BahnCard 50 First</option>
-        <option>BahnCard 100</option>
-        <option>Schwerbehindertenausweis mit Wertmarke</option>
-    </select>
+        <section>
+            <h2>Connection details</h2>
+            <select>
+                <option>Use long-distance services</option>
+                <option>Use only regional services</option>
+            </select>
+            <select title="Alternative options may be slower, but could possibly have less changes">
+                <option>Only fastest route</option>
+                <option>Show alternative options as well</option>
+            </select>
+            <div class="grid sideBySideGrid">
+                    <div>
+                        <select title="Maximum amount of changes in the journey">
+                            <option>Infinite changes</option>
+                            <option>1 change</option>
+                            <option>2 changes</option>
+                            <option>3 changes</option>
+                            <option>4 changes</option>
+                            <option>5 changes</option>
+                            <option>6 changes</option>
+                            <option>7 changes</option>
+                            <option>8 changes</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select title="Time limit for changes">
+                            <option>No time limit for changes</option>
+                            <option>10 minute changes</option>
+                            <option>20 minute changes</option>
+                            <option>30 minute changes</option>
+                            <option>60 minute changes</option>
+                            <option>Custom time limit</option>
+                        </select>
+                    </div>
+                </div>
+            <select>
+                <option>Second class</option>
+                <option>First class</option>
+            </select>
+            <select>
+                <option>No BahnCard</option>
+                <option>BahnCard 25 Second</option>
+                <option>BahnCard 25 First</option>
+                <option>BahnCard 50 Second</option>
+                <option>BahnCard 50 First</option>
+                <option>BahnCard 100</option>
+                <option>Schwerbehindertenausweis mit Wertmarke</option>
+            </select>
+        </section>
+    </div>
 
     <hr>
 

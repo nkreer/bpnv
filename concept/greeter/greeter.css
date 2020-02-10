@@ -3,22 +3,57 @@ body {
     padding: 0;
     background-color: #F01414;
     font-family: sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
+    transition: 1s;
 }
 
 .container {
     box-sizing: border-box;
     margin-top: 10%;
-    padding: 20px;
+    padding: 5%;
     padding-bottom: 40px;
     background-color: white;
     color: #111;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 100%;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 5%;
+	grid-row-gap: 5%;
+}
+
+.sideBySideGrid {
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    body {
+        background-color: #878C96;
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: inline;
+    }
+}
+
+h1,
 h2,
 h3 {
     margin-bottom: 30px;
@@ -31,7 +66,7 @@ hr {
 }
 
 input[type="text"],
-input[type="checkbox"],
+input[type="number"],
 button,
 select {
     display: block;
@@ -41,6 +76,7 @@ select {
     padding-bottom: 1%;
     border-style: solid;
     border-top: #111;
+    text-overflow: ellipsis;
 }
 
 button {
