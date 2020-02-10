@@ -14,4 +14,4 @@ a very dissappointed user of any of the available public transit apps.
 
 ## Preview
 
-![Desktop screenshot of the routing interface](concept/greeter/sreenshots/desktop.png) 
+![Desktop screenshot of the routing interface](concept/greeter/screenshots/desktop.png) 
