@@ -1,0 +1,30 @@
+{
+  "name": "bpnv",
+  "displayName": "bnpv",
+  "version": "1.0.0",
+  "description": "User friendly public transit routing for Germany",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Niklas Kreer",
+  "license": "GPLv3",
+  "dependencies": {
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "browser"
+    ]
+  }
+}

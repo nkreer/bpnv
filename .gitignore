@@ -1,0 +1,5 @@
+# Ignore cordova paths that can be pulled from the net
+bpnv/hooks/
+bpnv/node_modules/
+bpnv/platforms/
+bpnv/plugins/
