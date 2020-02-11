@@ -31,6 +31,14 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.narrowGrid {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 1%;
+	grid-row-gap: 1%;
+}
+
 @media only screen and (min-width: 600px) {
     .container {
         margin-top: 5%;
@@ -65,11 +73,14 @@ hr {
     color: #C8CDD2;
 }
 
+.hiddenElement {
+    display: none;
+}
+
 input[type="text"],
 input[type="number"],
 button,
 select {
-    display: block;
     margin-bottom: 25px;
     width: 100%;
     padding-top: 1%;

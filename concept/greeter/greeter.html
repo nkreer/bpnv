@@ -8,13 +8,19 @@
 
 <body>
 
+<script src="greeter.js"></script>
+
 <div class="container">
     <div class="grid">
         <section>
             <h1>Plan your journey</h1>
-            <form>
-                <input type="text" placeholder="Start">
-                <input type="text" placeholder="Destination">
+                <input type="text" placeholder="Start (e.g. Frankfurt(Main)Hbf)">
+                <input type="text" placeholder="Via (e.g. Hannover Hbf)" id="via1" class="hiddenElement">
+                <input type="text" placeholder="Via" id="via2" class="hiddenElement">
+                <div class="narrowGrid">
+                    <input type="text" id="destination" placeholder="Destination (e.g. Hamburg Hbf)">
+                    <button onclick="spawnViaStation();" title="Add another destination" id="addVia">+</button>
+                </div>
                 <select>
                     <option>Depart now</option>
                     <option>Depart in 15 minutes</option>
@@ -23,7 +29,6 @@
                 </select>
                 <button>Search</button>
                 <button title="View only the first search result">Best match</button>
-            </form>
         </section>
 
         <hr class="divider">
