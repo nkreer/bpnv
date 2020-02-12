@@ -34,9 +34,9 @@ body {
 .narrowGrid {
     display: grid;
     grid-template-columns: 6fr 1fr;
-	grid-template-rows: 1fr;
-	grid-column-gap: 1%;
-	grid-row-gap: 1%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -110,4 +110,14 @@ a,
 a:visited {
     color: #F01414;
     text-decoration: none;
+}
+
+.redBullet {
+    font-size: 1.3em;
+    margin-right: 20px;
+    color: #F01414;
+}
+
+.notFullWidth {
+    max-width: 50%;
 }

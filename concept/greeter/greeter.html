@@ -14,11 +14,17 @@
     <div class="grid">
         <section>
             <h1>Plan your journey</h1>
-                <input type="text" placeholder="Start (e.g. Frankfurt(Main)Hbf)">
-                <input type="text" placeholder="Via (e.g. Hannover Hbf)" id="via1" class="hiddenElement">
-                <input type="text" placeholder="Via" id="via2" class="hiddenElement">
+                <input type="text" title="Starting station" placeholder="Start (e.g. Frankfurt(Main)Hbf)">
+                <div id="via1" class="hiddenElement">
+                    <span aria-hidden="true" class="redBullet">•</span>
+                    via <input title="via station" type="text" placeholder="Via (e.g. Hannover Hbf)" id="via1text" class="notFullWidth">
+                </div>
+                <div id="via2" class="hiddenElement">
+                    <span aria-hidden="true" class="redBullet">•</span>
+                    via <input title="via station" type="text" placeholder="Via" id="via2text" class="notFullWidth">
+                </div>
                 <div class="narrowGrid">
-                    <input type="text" id="destination" placeholder="Destination (e.g. Hamburg Hbf)">
+                    <input type="text" title="Destination" id="destination" placeholder="Destination (e.g. Hamburg Hbf)">
                     <button onclick="spawnViaStation();" title="Add another destination" id="addVia">+</button>
                 </div>
                 <select>
