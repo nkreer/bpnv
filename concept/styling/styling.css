@@ -4,14 +4,13 @@ body {
     background-color: #F01414;
     font-family: sans-serif;
     color: white;
-    font-size: 1.2em;
-    transition: 1s;
+    font-size: 1em;
 }
 
 .container {
     box-sizing: border-box;
     margin-top: 10%;
-    padding: 5%;
+    padding: 2%;
     padding-bottom: 40px;
     background-color: white;
     color: #111;
@@ -87,9 +86,9 @@ select {
     padding-bottom: 1%;
     border-style: solid;
     text-overflow: ellipsis;
-    font-size: 1.2em;
+    font-size: 1em;
 }
-2
+
 input[type="text"] {
     border-style: none;
     border-bottom-style: solid;
@@ -124,6 +123,73 @@ a:visited {
     color: #F01414;
 }
 
+.danger,
+.accented {
+    color: #F01414;
+}
+
+.impossible {
+    text-decoration: line-through;
+}
+
+.success {
+    color: #78BE14;
+}
+
 .notFullWidth {
     max-width: 50%;
+}
+
+.connectionSearchDetail {
+    background-color: #E1E6EB;
+    color: #111;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 4fr;
+    grid-column-gap: 3%;
+    grid-row-gap: 1%;
+    padding: 1%;
+}
+
+.connectionCard {
+    background-color: #E1E6EB;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    color: #111;
+    text-decoration: none;
+}
+
+.connectionCard:hover {
+    background-color: #C8CDD2;
+}
+
+.infoCard {
+    margin-bottom: 0;
+    box-shadow: none;
+    padding-bottom: 1%;
+}
+
+.connectionCardTime {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    margin-bottom: 10px;
+}
+
+.connectionCardTimeDuration {
+    font-weight: normal;
+}
+
+.connectionCardInformation {
+    font-size: 0.9em;
+    color: #646973;
 }

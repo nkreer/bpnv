@@ -16,6 +16,7 @@ The colour palette of the application should be very uniform and homogenous. To 
 * DB Dunkelgrau: `#646973` should be used for notices and text that is not very important to the user in a given situation
 * White: `#FFF` must be used as the base background of everything (`#111` in darkmode)
 * `#111` should be used as the primary text colour (`#F0F3F5` in dark mode)
+* Green: `#78BE14` used for success notifications or anything regarding climate
 
 There is no clear font choice for now, but we will have one later.
 
