@@ -1,10 +1,17 @@
 // Add via stations
 var viaStationCount = 0;
+var viaStationLimit = 2;
 
 function spawnViaStation(){
+    // Notify users when they have reached the limit
+    if(viaStationCount === viaStationLimit){
+        alert("Only " + viaStationLimit + " via stations are possible.");
+        return;
+    }
+
     destination = document.getElementById("destination");
     
-    if(viaStationCount < 2){
+    if(viaStationCount < viaStationLimit){
         nextViaCount = viaStationCount + 1;
         var via = document.getElementById("via" + nextViaCount);
         var viatext = document.getElementById("via" + nextViaCount + "text");
@@ -16,7 +23,7 @@ function spawnViaStation(){
     }
 
     // Hide the via button when the maximum is reached
-    if(viaStationCount === 2){
+    if(viaStationCount === viaStationLimit){
         button = document.getElementById("addVia");
         button.className = "hiddenElement";
         button.parentNode.style.display = "block";

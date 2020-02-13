@@ -3,8 +3,8 @@ body {
     padding: 0;
     background-color: #F01414;
     font-family: sans-serif;
-    font-size: 1em;
     color: white;
+    font-size: 1.2em;
     transition: 1s;
 }
 
@@ -15,8 +15,8 @@ body {
     padding-bottom: 40px;
     background-color: white;
     color: #111;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .grid {
@@ -86,8 +86,14 @@ select {
     padding-top: 1%;
     padding-bottom: 1%;
     border-style: solid;
-    border-top: #111;
     text-overflow: ellipsis;
+    font-size: 1.2em;
+}
+2
+input[type="text"] {
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: #111;
 }
 
 button {
